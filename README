@@ -1,5 +1,3 @@
 1. Put all these files into the www folder of UwAmp to view them on the local server
 
 2. In ytconv.php and ytconvauto.php, you have to change the download and archive destination locations to those that suit you. The download location should point to a folder while the archive location should point to a .txt file
-
-3. By default, the channel download option only downloads the latest 2 videos, you can change this value in ytconvauto.php
