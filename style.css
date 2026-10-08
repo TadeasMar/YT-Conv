@@ -1,0 +1,319 @@
+.form {
+    display: grid;
+    grid-template-columns: 20vw 20vw;
+    grid-template-rows: 35vw;
+    gap: 20px;
+    max-width: 600px; 
+    margin: auto;
+}
+
+.form-auto {
+    display: grid;
+    grid-template-columns: 20vw 20vw;
+    grid-template-rows: 35vw;
+    gap: 20px;
+    max-width: 600px; 
+    margin: auto;
+}
+
+.forms-wrapper {
+    display: flex;
+    justify-content: center;  
+    align-items: flex-start;  
+    gap: 200px;
+    padding: 20px;
+}
+
+.forms-wrapper .form {
+    margin: 0;                
+    flex: 0 0 auto;           
+}
+
+.forms-wrapper .form-auto {
+    margin: 0;                
+    flex: 0 0 auto;           
+}
+
+.form-auto {
+    margin-left: 100px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.column_auto h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.column h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.column h4 {
+    margin-bottom: -5px;
+}
+
+.form_group {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    font-family: 'YouTube Sans', sans-serif;
+    font-size: 14px;
+}
+
+legend {
+    font-family: 'YouTube Sans', sans-serif;
+    font-size: 14px;
+}
+
+.form button[type="submit"] {
+    grid-column: span 2;
+    padding: 10px;
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'YouTube Sans', sans-serif;
+    font-size: 150%;
+}
+
+.form-auto button[type="submit"] {
+    grid-column: span 2;
+    padding: 10px;
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'YouTube Sans', sans-serif;
+    font-size: 150%;
+    width: 50%;
+}
+
+.column_video {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.form:has(input[name="format"][value="mp3"]:checked) .column_video {
+    opacity: 0.5;
+}
+
+.form:has(.column_audio input[name="quality"]:checked) .column_video {
+    opacity: 0.5;
+}
+
+.column_audio {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.form:has(input[name="format"][value="mp4"]:checked) .column_audio {
+    opacity: 0.5;
+}
+
+.form:has(.column_video input[name="quality"]:checked) .column_audio {
+    opacity: 0.5;
+}
+
+input[name="quality"] {
+    appearance: none;
+    width: 17.5vw;
+    height: 5vh;
+    border: 2px solid red;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    flex-shrink: 0;
+}
+
+input[name="quality"] + label {
+    transform: translate(-10vw);
+    font-size: 14px;
+    font-weight: bold;
+    pointer-events: none; 
+    transition: color 0.3s ease-in-out;
+}
+
+input[name="quality"]:checked {
+    background-color: #FF0033;
+}
+
+input[name="quality"]:checked + label {
+    color: white;
+}
+
+input[name="format"] {
+    appearance: none; 
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid #282828;
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+    transition: background 0.3s ease-in-out;
+}
+
+input[name="format-auto"] {
+    appearance: none; 
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid #282828;
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+    transition: background 0.3s ease-in-out;
+}
+
+input[name="format-auto"]:checked {
+    background-color: #FF0033
+}
+
+input[name="format"]:checked {
+    background-color: #3d3c3c
+}
+
+input[name="playlist"] {
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid #282828;
+    background-color: #f0f0f0;
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+    transition: background 0.3s ease-in-out;
+}
+
+input[name="playlist"]:checked {
+    background-color: #282828;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type="text"] {
+    position: relative;
+    align-items: center;
+    border: 1px solid;
+    border-color: #c6c6c6;
+    background-color: #ffffff;
+    box-shadow: inset 0 1px 2px #eee;
+    border-radius: 40px;
+    padding: 0 4px 0 16px;
+    display: inline-block;
+    cursor: text;
+    height: 30px;
+    width: 15vw;
+}
+
+input[type="number"] {
+    position: relative;
+    align-items: center;
+    border: 1px solid;
+    border-color: #c6c6c6;
+    background-color: #ffffff;
+    box-shadow: inset 0 1px 2px #eee;
+    border-radius: 40px;
+    padding: 0 4px 0 16px;
+    display: inline-block;
+    cursor: text;
+    height: 30px;
+    width: 3vw;
+}
+
+/* --- Tag System Styles --- */
+.tag-input-wrapper {
+    text-align: center;
+    padding: 10px;
+}
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    min-height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #c6c6c6;
+    background-color: #ffffff;
+    box-shadow: inset 0 1px 2px #eee;
+    border-radius: 40px;
+    max-width: 100%;
+}
+
+.tag-input {
+    border: none;
+    background: transparent;
+    outline: none;
+    flex: 1;
+    min-width: 120px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.tag-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #FF0000;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    max-width: 200px;
+}
+
+.tag-chip span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tag-remove {
+    background: rgba(255,255,255,0.3);
+    border: none;
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.tag-remove:hover {
+    background: rgba(255,255,255,0.6);
+    color: #FF0000;
+}
+
+.tag-hint {
+    font-size: 11px;
+    color: #888;
+    margin-top: 6px;
+    font-family: 'Roboto', sans-serif;
+}
