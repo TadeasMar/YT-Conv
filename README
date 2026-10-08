@@ -1,3 +1,8 @@
-1. Put all these files into the www folder of UwAmp to view them on the local server
+FFmpeg and the python library yt-dlp are required.
 
-2. In ytconv.php and ytconvauto.php, you have to change the download and archive destination locations to those that suit you. The download location should point to a folder while the archive location should point to a .txt file
+FFmpeg location: C:/ffmpeg/bin
+Download location: C:/UwAmp/www/YTConv/download
+Archive location: C:/YTConv/archive.txt
+
+Install and setup UwAmp
+Put all the files into the www folder of UwAmp to view them on the local server
